@@ -1,0 +1,25 @@
+﻿@using System.Web
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="3lDFOdMj8Uql6FwLaGFQ3Znxl8aH3O5CTtyBuGdHV9o" />
+    <meta name="author" content="VBM Soft, co@vbmsoft.ro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>@ViewBag.Title</title>
+    @Html.Raw(ViewBag.Head)
+    <style type="text/css">
+        .container 
+        {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>
